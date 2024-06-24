@@ -6,7 +6,7 @@ A number guessing game in Python is a simple and fun interactive program where t
 ## Creating logo_art file
 
 * Create a logo of the design you like from this [website](https://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20)
-  * Select the font you like and paste it inside logo_art.py file
+- Select the font you like and paste it inside logo_art.py file
 
 ```python
 logo = "your logo"
