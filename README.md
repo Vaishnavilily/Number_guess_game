@@ -6,8 +6,8 @@
 * The Program Asks For the User if they want it to be 'easy' or 'hard'
 * The 'easy' level gives maximum 10 attempts
 * The 'hard' level gives maximum 5 attempts
-* If the number the user guessed is higher than the choosen number then the output would be "Your guess is too high"
-* If the number the user guessed is lower than the choosen number then the output would be "Your guess is too low"
+* If the number the user guessed is higher than the chosen number then the output would be "Your guess is too high"
+* If the number the user guessed is lower than the chosen number then the output would be "Your guess is too low"
 
 ## Creating logo_art file
 
