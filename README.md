@@ -1,1 +1,1 @@
-# Number_guess_game
+# Number Guessing Game in Python
