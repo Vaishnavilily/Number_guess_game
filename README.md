@@ -55,5 +55,74 @@ def easy_hard(choose_num,attempts):
 * Then it prints if the User guess is Too high or Too low or Correct guess
 * For Calculating the Number of guesses left, we used no_guess() function
 
+## Calculating Number of Guesses Left
+```python
+def no_guess(attempts,i):
+    if attempts-i!=0:
+        print('guess again')    
+        return(f'You have {attempts-i} attempts remaining to guess the number')
+    else:
+        return("You are out of guesses...You lose!!!")
+```
+* This function Calculates the Number of attempts left
+* And Prints "You are out of guesses" Message If you lose
+
+## Main Code
+```python
+print(logo_art.logo)
+print("Let me think of a number between 1 to 50.")
+choice = "Y"
+while(choice == "Y"):
+    num_list = list(range(51))
+    choose_num = random.choice(num_list)
+    level = input("Choose level of difficulty...Type 'easy' or 'hard': ").lower().strip()
+    if level == 'easy':
+        easy_hard(choose_num,attempts=10)
+    elif level == 'hard':
+        easy_hard(choose_num,attempts=5)
+    else:
+        print("you've entered wrong input, try again")
+        continue
+    choice =input("Do you want to play again(Y/N)?:").upper().strip()
+```
+* It prints the Expected output and Runs The Main function According to The Level of Difficulty Choosen by the User
+* After Running the Main function easy_hard() and finishing the game, It asks If User wants to play again
+
+## Sample Output:
+```
+   _____                       _______ _            _   _                 _               
+  / ____|                     |__   __| |          | \ | |               | |              
+ | |  __ _   _  ___  ___ ___     | |  | |__   ___  |  \| |_   _ _ __ ___ | |__   ___ _ __ 
+ | | |_ | | | |/ _ \/ __/ __|    | |  | '_ \ / _ \ | . ` | | | | '_ ` _ \| '_ \ / _ \ '__|
+ | |__| | |_| |  __/\__ \__ \    | |  | | | |  __/ | |\  | |_| | | | | | | |_) |  __/ |   
+  \_____|\__,_|\___||___/___/    |_|  |_| |_|\___| |_| \_|\__,_|_| |_| |_|_.__/ \___|_|   
+
+Let me think of a number between 1 to 50.
+Choose level of difficulty...Type 'easy' or 'hard': hard
+You have  5  attempts remaining to guess the number!
+make a guess 10
+Your guess is too low
+guess again
+You have 4 attempts remaining to guess the number
+make a guess 20
+Your guess is too low
+guess again
+You have 3 attempts remaining to guess the number
+make a guess 40
+Your guess is too high
+guess again
+You have 2 attempts remaining to guess the number
+make a guess30
+Your guess is too high
+guess again
+You have 1 attempts remaining to guess the number
+make a guess25
+Your guess is too low
+You are out of guesses...You lose!!!
+Do you want to play again(Y/N)?:N
+```
+
+
+
 
 
